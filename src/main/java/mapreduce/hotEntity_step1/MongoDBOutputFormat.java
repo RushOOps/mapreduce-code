@@ -1,0 +1,26 @@
+package mapreduce.hotEntity_step1;
+
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.*;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter;
+
+import java.io.IOException;
+
+public class MongoDBOutputFormat extends OutputFormat<Text, LongWritable> {
+    @Override
+    public RecordWriter<Text, LongWritable> getRecordWriter(TaskAttemptContext context) {
+        return new MongoDBRecordWriter(context);
+    }
+
+    @Override
+    public void checkOutputSpecs(JobContext jobContext) {
+
+    }
+
+    @Override
+    public OutputCommitter getOutputCommitter(TaskAttemptContext context) throws IOException {
+        // 暂不清楚作用
+        return new FileOutputCommitter(null, context);
+    }
+}
