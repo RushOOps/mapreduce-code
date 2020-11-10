@@ -1,4 +1,4 @@
-package mapreduce.MergeFile;
+package mapreduce.mergeFile;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;

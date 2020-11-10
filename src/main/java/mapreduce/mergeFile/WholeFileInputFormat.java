@@ -1,4 +1,4 @@
-package mapreduce.MergeFile;
+package mapreduce.mergeFile;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.BytesWritable;
