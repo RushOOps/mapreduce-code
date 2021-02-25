@@ -1,4 +1,4 @@
-package mapreduce.TopNPlus;
+package mapreduce.topNPlus;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;

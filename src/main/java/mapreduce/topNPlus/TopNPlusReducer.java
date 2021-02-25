@@ -1,4 +1,4 @@
-package mapreduce.TopNPlus;
+package mapreduce.topNPlus;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
